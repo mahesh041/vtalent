@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Html CRUD with Pure JavaScript
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body >
+        <div class="header_1">To Do List</div>
+    <table align="center">
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div align="center">
+                        <label>DATE</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    
+                        <label>TIME</label>
+                        <input type="text" name="empCode" id="empCode">
+                   
+                        <label>TASK</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="ADD" name="add">
+                        <button value="DELETE" onClick="onDelete(this)" name="add">DELETE</button>
+                    </div>
+                </form>
+            </td>
+          
+                <table class="list" id="employeeList"align="center" >
+                    <thead>
+                        <tr>
+                            <th>DATE</th>
+                            <th>TIME</th>
+                            <th>TASK</th>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+         
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
